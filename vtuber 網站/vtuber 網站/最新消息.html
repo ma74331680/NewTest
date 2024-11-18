@@ -1,70 +1,12 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>最新消息</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-        }
-        header {
-            background-color: #ffc107;
-            color: white;
-            padding: 1em 0;
-            text-align: center;
-        }
-        main {
-            padding: 20px;
-            max-width: 800px;
-            margin: auto;
-            background-color: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            text-align: center;
-            color: #333;
-        }
-        .news-item {
-            border-bottom: 1px solid #ddd;
-            padding: 15px 0;
-        }
-        .news-item:last-child {
-            border-bottom: none;
-        }
-        .news-title {
-            font-size: 1.2em;
-            color: #167f05;
-            margin: 0;
-        }
-        .news-date {
-            font-size: 0.9em;
-            color: #999;
-            margin: 5px 0;
-        }
-        .news-description {
-            font-size: 1em;
-            color: #666;
-        }
-        .hidden-news-description {
-            display: none;
-            color: #666;
-        }
-        .read-more-btn {
-            color: #4CAF50;
-            cursor: pointer;
-            font-weight: bold;
-            text-decoration: none;
-        }
-        .read-more-btn:hover {
-            text-decoration: underline;
-        }
-    </style>
 </head>
+
 <body>
     <header>
         <h1>最新消息</h1>
@@ -73,11 +15,13 @@
         <div class="news-item">
             <h2 class="news-title">我們的全新繪師上線！</h2>
             <p class="news-date">2024年11月15日</p>
-            <p class="news-description">今日宣布與著名繪師xxx展開合作，共同推出一系列獨特的藝術作品。這次合作將融合xxx的精湛技藝和聖樹工坊的創新理念，旨在為粉絲和藝術愛好者帶來全新的視覺體驗。</p>
+            <p class="news-description">今日宣布與著名繪師xxx展開合作，共同推出一系列獨特的藝術作品。這次合作將融合xxx的精湛技藝和聖樹工坊的創新理念，旨在為粉絲和藝術愛好者帶來全新的視覺體驗。
+            </p>
             <div class="hidden-news-description" id="more-news-1">
                 <p>此次合作的作品將涵蓋xxx，包括周邊商品設計、動畫概念圖等，每一件作品都將展示xxx獨特的藝術風格，並融入聖樹工坊的品牌特色。</p>
             </div>
-            <a class="read-more-btn" id="readMoreBtn1" onclick="toggleDescription('more-news-1', 'readMoreBtn1')">閱讀更多</a>
+            <a class="read-more-btn" id="readMoreBtn1"
+                onclick="toggleDescription('more-news-1', 'readMoreBtn1')">閱讀更多</a>
         </div>
         <div class="news-item">
             <h2 class="news-title">我們的全新網站上線！</h2>
@@ -86,7 +30,8 @@
             <div class="hidden-news-description" id="more-news-2">
                 <p>此次網站改版不僅展現了公司的品牌升級，更提供了用戶友好的瀏覽體驗和豐富的功能，為客戶、合作夥伴及社群用戶帶來全新的數位體驗。</p>
             </div>
-            <a class="read-more-btn" id="readMoreBtn2" onclick="toggleDescription('more-news-2', 'readMoreBtn2')">閱讀更多</a>
+            <a class="read-more-btn" id="readMoreBtn2"
+                onclick="toggleDescription('more-news-2', 'readMoreBtn2')">閱讀更多</a>
         </div>
         <div class="news-item">
             <h2 class="news-title">發布會圓滿落幕</h2>
@@ -95,7 +40,8 @@
             <div class="hidden-news-description" id="more-news-3">
                 <p>這一天，見證了我們團隊的努力，並鞏固了我們在行業內的領先地位。</p>
             </div>
-            <a class="read-more-btn" id="readMoreBtn3" onclick="toggleDescription('more-news-3', 'readMoreBtn3')">閱讀更多</a>
+            <a class="read-more-btn" id="readMoreBtn3"
+                onclick="toggleDescription('more-news-3', 'readMoreBtn3')">閱讀更多</a>
         </div>
     </main>
 
@@ -114,4 +60,5 @@
         }
     </script>
 </body>
+
 </html>
