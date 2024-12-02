@@ -419,15 +419,21 @@ body {
     position: absolute;
     top: 15%;
     left: 40%;
+    padding: 5px 10px;
+
     background-color: #ffcc00; /* 背景顏色 */
     color: #000000; /* 文字顏色 */
-    padding: 5px 10px;
     border-radius: 5px;
     font-weight: bold;
     height: 75px;
     width: 300px;
     font-size:  50px;
 }
+    
+    
+    
+    
+    
 
 
 
@@ -458,7 +464,7 @@ header {
   background-position: center; /* 图片居中 */
 
   /* 其他样式 */
-  width: 300px; /* 设置元素宽度 */
+  width: 400px; /* 设置元素宽度 */
   height: 40px; /* 设置元素高度 */
   text-align: center; /* 文字居中 */
 }
@@ -475,12 +481,13 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-image: linear-gradient(135deg,#e6ba5d 0%,#9ac78a 100%);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  font-size: 130px;
+  
+  background-image: linear-gradient(135deg,#e6ba5d 0%,#9ac78a 100%); /*背景設為漸變色*/
+  -webkit-background-clip: text; /*使背景顯示在文字上(適用Chrome和Safari)*/
+  -moz-background-clip: text; /*使背景顯示在文字上(適用舊版firefox)*/
+  background-clip: text; /*使背景顯示在文字上*/
+  color: transparent; /*字體變透明*/
+  font-size: clamp(80px, 8vw, 130px);
 }
 .gMenu .menu .menu-item{
   color: #d300f8;/* 文字顏色 */
