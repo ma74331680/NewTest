@@ -5,10 +5,11 @@ body {
     background-color: #f9f9f9;
 }
 header {
-    background-color: #ffc107;
-    color: white;
-    padding: 1em 0;
-    text-align: center;
+  position: relative;
+  background-color: #9e06c432;
+  color: rgb(255, 255, 255);
+  padding: 1em 0;
+  text-align: center;
 }
 main {
     padding: 20px;
@@ -147,3 +148,7 @@ h1 {
     top: 10px;
     right: 50px;
   }
+  .gMenu .menu .menu-item{
+    color: #d300f8;/* 文字顏色 */
+  }
+  

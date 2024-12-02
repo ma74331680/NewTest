@@ -412,9 +412,12 @@ footer p img {
 
 
 
-/* 自定義樣式 */
 header {
   position: relative;
+  background-color: #9e06c432;
+  color: rgb(0, 0, 0);
+  padding: 1em 0;
+  text-align: center;
 }
 
 .header-right {
@@ -423,3 +426,9 @@ header {
   right: 50px;
 }
 
+       
+      .gMenu .menu .menu-item{
+        color: #d300f8;/* 文字顏色 */
+      }
+      
+     

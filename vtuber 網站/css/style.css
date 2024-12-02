@@ -1,5 +1,3 @@
-@charset "utf-8";
-
 body {
   font-family: 'Catamaran','Noto Sans Traditional Chinese',sans-serif;
   font-size: 16px;
@@ -14,12 +12,15 @@ img {
   background: url(../images/top_bg.jpg) no-repeat center top/cover;
   padding-top: 50px;
   margin-bottom: 64px;
+  
 }
 .topPage header h1 img {
   width: 240px;
+
 }
 .topPage header h1 {
   text-align: center;
+  
 }
 .linkList {
   padding: 0 20px;
@@ -39,10 +40,14 @@ img {
 .linkList li a:hover {
   filter: brightness(105%);
 }
+.subPage {
+  position: relative; /* 將 .subPage 作為相對定位容器 */
+}
 .subPage header {
   border-top: 14px solid #f5f5f5;
   padding-top: 40px;
   margin-bottom: 30px;
+  
 }
 .subPage header h1 {
   text-align: center;
@@ -50,6 +55,7 @@ img {
   font-weight: 700;
   letter-spacing: .17em;
   text-transform: uppercase;
+  
 }
 .subPage header h1 span {
   background-image: linear-gradient(135deg,#e6ba5d 0%,#9ac78a 100%);
@@ -57,7 +63,7 @@ img {
   -moz-background-clip: text;
   background-clip: text;
   color: transparent;
-}
+}/*標題顏色*/
 .subPage h2 {
   font-size: 20px;
   font-weight: 700;
@@ -399,7 +405,7 @@ footer p img {
 body {
   margin: 0; /* 去除瀏覽器預設外邊距 */
   height: 100vh; /* 視口高度，確保填滿整個視窗 */
-  background-image: url('../images/雪樹.jpg');
+  background-image: url('../images/樹.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center; /* 圖片置中 */
@@ -409,14 +415,18 @@ body {
 
 /* 自定義樣式，讓文字固定在左上角 */
 .news-too {
+    text-align: center;
     position: absolute;
-    top: 10px;
-    left: 5px;
+    top: 15%;
+    left: 40%;
     background-color: #ffcc00; /* 背景顏色 */
-    color: #000; /* 文字顏色 */
+    color: #000000; /* 文字顏色 */
     padding: 5px 10px;
     border-radius: 5px;
     font-weight: bold;
+    height: 75px;
+    width: 300px;
+    font-size:  50px;
 }
 
 
@@ -432,3 +442,46 @@ header {
   right: 50px;
 }
 
+.content{
+  position: absolute; /* 將元素從文档流中取出 */
+  top: 70%; /* 相對於父元素頂部的  */
+  left: 50%; /* 相對於父元素左边的  */
+  transform: translate(-50%, -40%); /* 将元素的中心点移动到指定位置 */
+
+  /* 調整字體大小 */
+  font-size: 20px; /* 例如，设置字体大小为 */
+
+
+  /* 或使用背景图片 */
+  background-image: url('your-image.jpg');
+  background-size: cover; /* 图片填满整个元素 */
+  background-position: center; /* 图片居中 */
+
+  /* 其他样式 */
+  width: 300px; /* 设置元素宽度 */
+  height: 40px; /* 设置元素高度 */
+  text-align: center; /* 文字居中 */
+}
+#logo{
+  width: 60px;
+  height: 60px;
+  position: absolute; /* 將元素從文檔流中取出 */
+  top: 20px; /* 從父元素的頂部向下偏移 20px */
+  left: 20px; /* 從父元素的左邊向右偏移 20px */
+}
+.title {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: linear-gradient(135deg,#e6ba5d 0%,#9ac78a 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 130px;
+}
+.gMenu .menu .menu-item{
+  color: #d300f8;/* 文字顏色 */
+}

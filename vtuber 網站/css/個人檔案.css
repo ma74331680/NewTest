@@ -149,3 +149,6 @@ h1.main-title {
     top: 10px;
     right: 50px;
   }
+  .gMenu .menu .menu-item{
+    color: #fd0008;/* 文字顏色 */
+  }
