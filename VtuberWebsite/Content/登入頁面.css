@@ -1,0 +1,68 @@
+body {
+    margin: 0; /* 去除瀏覽器預設外邊距 */
+    height: 100vh; /* 視口高度，確保填滿整個視窗 */
+    background-image: url('../images/雪樹.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; /* 圖片置中 */
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  .login-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+}
+.login-container h1 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.form-control {
+    margin-bottom: 15px;
+    height: 45px;
+}
+.btn-primary {
+    background-color: #09ef55;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+}
+.btn-primary:hover {
+    background-color: #07c44d;
+}
+.divider {
+    text-align: center;
+    margin: 20px 0;
+}
+.divider::before, .divider::after {
+    content: '';
+    display: inline-block;
+    width: 40%;
+    height: 1px;
+    background-color: #ddd;
+    vertical-align: middle;
+}
+.divider::before {
+    margin-right: 10px;
+}
+.divider::after {
+    margin-left: 10px;
+}
+  
+.login-container h1 {
+    font-size: 30px;
+}
+
+h1 {
+    font-size: 48px; /* 根據需求調整大小 */
+}
