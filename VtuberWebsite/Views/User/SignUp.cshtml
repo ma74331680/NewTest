@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "註冊";
+}
+
+<head>
+    <link rel="stylesheet" href="~/Content/註冊頁面.css" />
+</head>
+<body>
+    <div class="register-form mx-auto mt-5" style="max-width: 400px;">
+        <h2 class="text-center mb-4">註冊帳號</h2>
+        <form id="registerForm" onsubmit="return handleRegister()">
+            <div class="mb-3">
+                <label for="username" class="form-label">帳號</label>
+                <input type="text" class="form-control" id="username" placeholder="輸入帳號" required>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">密碼</label>
+                <input type="password" class="form-control" id="password" placeholder="輸入密碼" required>
+            </div>
+            <div class="mb-3">
+                <label for="confirmPassword" class="form-label">確認密碼</label>
+                <input type="password" class="form-control" id="confirmPassword" placeholder="再次輸入密碼" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">註冊</button>
+        </form>
+        <div class="text-center mt-3">
+            <a href="登入頁面.html" class="text-decoration-none">已有帳戶？前往登入</a>
+        </div>
+    </div>
+</body>

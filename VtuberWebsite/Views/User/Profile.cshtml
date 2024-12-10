@@ -1,0 +1,84 @@
+﻿
+@{
+    ViewBag.Title = "個人檔案";
+}
+
+<head>
+    <link rel="stylesheet" href="~/Content/個人檔案.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="profile-container">
+            <div class="profile-header">
+                <img alt="個人頭像" class="profile-image">
+                <div class="profile-info">
+                    <div class="profile-header-title">
+                        <h1>王小明</h1>
+                        <button type="button" class="edit-profile-btn" onclick="editProfile()">編輯</button>
+                    </div>
+                    <div class="profile-details" id="profile-details">
+                        <p>職業：軟體工程師</p>
+                        <p>年齡：28歲</p>
+                        <p>居住地：台北市</p>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-bio">
+                <div class="profile-bio-header">
+                    <h2>關於我</h2>
+                    <button type="button" class="edit-profile-btn" onclick="editBio()">編輯</button>
+                </div>
+                <p id="bio-text">熱愛程式設計和解決複雜的技術挑戰。業餘時間喜歡閱讀科技相關書籍和嘗試新的程式語言。目標是成為一名出色的全棧開發者。</p>
+            </div>
+
+            <div class="contact-section">
+                <h2>聯絡資訊</h2>
+                <form class="contact-form" id="contactForm">
+                    <input type="email" id="email" placeholder="電子信箱" required>
+                    <input type="tel" id="phone" placeholder="電話號碼" required>
+
+                    <div class="social-links">
+                        <input type="text" id="github" placeholder="GitHub">
+                        <input type="text" id="linkedin" placeholder="LinkedIn">
+                    </div>
+
+                    <div class="social-links">
+                        <input type="text" id="facebook" placeholder="Facebook">
+                        <input type="text" id="instagram" placeholder="Instagram">
+                    </div>
+
+                    <button type="button" class="save-button" onclick="saveContactInfo()">儲存聯絡資訊</button>
+                </form>
+            </div>
+        </div>
+        <div class="post-container">
+            <h2>發佈新貼文</h2>
+            <form class="post-form">
+                <input type="text" placeholder="貼文標題" required>
+                <textarea rows="5" placeholder="請輸入您的貼文內容" required></textarea>
+                <input type="file" accept="image/*" placeholder="上傳圖片">
+
+                <div class="hashtag-section">
+                    <div class="hashtag-input">
+                        <select id="hashtag-select">
+                            <option value="">選擇標籤</option>
+                            <option value="#科技">#男</option>
+                            <option value="#程式設計">#女</option>
+                            <option value="#軟體開發">#羅莉</option>
+                            <option value="#人工智能">#獸人</option>
+                            <option value="#創新">#勒布朗詹姆斯</option>
+                        </select>
+                        <button type="button" onclick="addHashtag()">新增</button>
+                    </div>
+                    <div id="hashtag-list" class="hashtag-list"></div>
+                </div>
+
+                <button type="submit">發佈貼文</button>
+            </form>
+        </div>
+    </div>
+
+
+</body>
+
+

@@ -1,9 +1,54 @@
 ﻿@{
-    ViewBag.Title = "About";
+    ViewBag.Title = "關於我們";
 }
-<main aria-labelledby="title">
-    <h2 id="title">@ViewBag.Title.</h2>
-    <h3>@ViewBag.Message</h3>
 
-    <p>Use this area to provide additional information.</p>
-</main>
+<head>
+    <link rel="stylesheet" href="~/Content/關於我們.css" />
+</head>
+
+<body>
+    <main>
+        <section>
+            <img class="logo" src="~/Image/christmas-tree.png">
+            <h2>我們是誰？</h2>
+            <p>小孩愛騎豪洨人馬</p>
+            <p>我們是一個充滿熱情與創意的團隊，致力於為客戶提供最優質的服務與創新的解決方案。</p>
+        </section>
+
+        <section>
+            <h2>我們的願景</h2>
+            <p>我們希望通過專業知識與持續創新，幫助客戶實現他們的夢想，並在業界中建立一個可持續發展的典範。</p>
+        </section>
+
+        <section>
+            <h2>我們的團隊</h2>
+            <div class="team">
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/100" alt="成員1">
+                    <h3>馬詠慶</h3>
+                    <p>後端編寫與專案管理</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/100" alt="成員2">
+                    <h3>陳祺紘</h3>
+                    <p>前端編寫</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/100" alt="成員3">
+                    <h3>朱聖翔</h3>
+                    <p>計畫發想與技術負責</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/100" alt="成員4">
+                    <h3>洪偉倫</h3>
+                    <p>前端編寫</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/100" alt="成員5">
+                    <h3>蘇建豪</h3>
+                    <p>前端編寫</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>

@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "登入";
+}
+
+<head>
+    <link rel="stylesheet" href="~/Content/登入頁面.css" />
+</head>
+<body>
+    <div class="login-container">
+        <h1>聖樹工坊</h1>
+        <form id="loginForm">
+            <input type="email" class="form-control" placeholder="帳號" id="email" required>
+            <input type="password" class="form-control" placeholder="密碼" id="password" required>
+            <button type="button" class="btn btn-primary btn-block w-100" onclick="handleLogin()">登入</button>
+        </form>
+
+        <div class="divider">或</div>
+
+        <button class="btn btn-outline-secondary btn-block w-100" onclick="location.href='訪客首頁.html'">以訪客身份繼續</button>
+
+        <div class="mt-3 text-center">
+            <a href="註冊頁面.html">創建帳戶</a>
+        </div>
+    </div>
+</body>

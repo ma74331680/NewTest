@@ -6,21 +6,30 @@ using System.Web.Mvc;
 
 namespace VtuberWebsite.Controllers
 {
-    public class usercontroller
+    public class UserController : Controller
     {
         public ActionResult Index()
         {
-            return View();
+            return View("~/Views/Home/Index.cshtml");
         }
 
-        public ActionResult About()
+        public ActionResult Profile()
         {
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult Favorite()
         {
+            return View();
+        }
 
+        public ActionResult Login()
+        {
+            return View();
+        }
+
+        public ActionResult SignUp()
+        {
             return View();
         }
     }

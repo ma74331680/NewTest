@@ -10,18 +10,16 @@
     <link href="~/Content/style.css" rel="stylesheet" />
     <link href="~/Content/reset.css" rel="stylesheet" />
 </head>
+
+<a href="最新消息.html" class="news-too">最新消息</a>
+
 <body>
     <div class="container-fluid">
-
-        <a href="http://getboostrap.com" class="navbar-brand">
+        <a class="navbar-brand">
             <img id="logo" src="~/Image/christmas-tree.png" alt="logo">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu">
-            <span class="navbar-toggler-icon"></span>
-
-        </button>
     </div>
-    <a href="訪客最新消息.html" class="news-too">最新消息</a>
+
     <nav class="gMenu">
         <!-- 包裹人像圖示和下拉選單的容器，並設置類名以便定位 -->
         <div class="header-right dropdown">
@@ -43,8 +41,8 @@
             <li><a class="menu-item" href="我的最愛.html">我的最愛</a></li>
             <li><a class="menu-item" href="關於我們.html">關於我們</a></li>
         </ul>
-
     </nav>
+
     <div class="container body-content">
         @RenderBody()
     </div>

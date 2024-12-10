@@ -6,17 +6,11 @@ using System.Web.Mvc;
 
 namespace VtuberWebsite.Controllers
 {
-    public class HomeController : Controller
+    public class NewsController : Controller
     {
         public ActionResult Index()
         {
-            return View();
+            return View("~/Views/Home/Index.cshtml");
         }
-
-        public ActionResult About()
-        {
-            return View();
-        }
-
     }
 }
