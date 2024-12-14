@@ -1,18 +1,11 @@
 body {
     margin: 0; /* 去除瀏覽器預設外邊距 */
     height: 100vh; /* 視口高度，確保填滿整個視窗 */
-    background-image: url('../images/樹.jpg');
+    background-image: url('/Image/樹.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center; /* 圖片置中 */
-    background-color: #f8f9fa;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
-.register-form {
+}gister-form {
     background: #ffffff;
     padding: 20px;
     border-radius: 10px;
