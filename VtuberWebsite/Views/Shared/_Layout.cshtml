@@ -7,19 +7,16 @@
     <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-    <link href="~/Content/style.css" rel="stylesheet" />
-    <link href="~/Content/reset.css" rel="stylesheet" />
+    <link href="~/Content/layout.css" rel="stylesheet" />
 </head>
 
 <a href="最新消息.html" class="news-too">最新消息</a>
 
-<body>
-    <div class="container-fluid">
-        <a class="navbar-brand">
-            <img id="logo" src="~/Image/christmas-tree.png" alt="logo">
-        </a>
-    </div>
+<header>
+    <h1>@ViewBag.Title</h1>
+</header>
 
+<body>
     <nav class="gMenu">
         <!-- 包裹人像圖示和下拉選單的容器，並設置類名以便定位 -->
         <div class="header-right dropdown">

@@ -147,6 +147,7 @@
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\reset.css" />
+    <Content Include="Content\layout.css" />
     <Content Include="Content\style.css" />
     <Content Include="Content\作品列表.css" />
     <Content Include="Content\作品展示.css" />
@@ -204,8 +205,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Views\Gallery\" />
-    <Folder Include="Views\News\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
