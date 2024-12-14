@@ -171,3 +171,18 @@
         width: 100px; /* 調整為所需的寬度 */
     }
 
+
+/* 解決圖片被裁切問題 */
+.carousel-inner img {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+}
+
+/* 限制小螢幕的高度 */
+@media (max-width: 768px) {
+    .carousel-inner img {
+        max-height: 300px;
+    }
+}
+

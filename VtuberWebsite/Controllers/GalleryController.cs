@@ -12,5 +12,9 @@ namespace VtuberWebsite.Controllers
         {
             return View();
         }
+        public ActionResult GalleryShow()
+        {
+            return View();
+        }
     }
 }

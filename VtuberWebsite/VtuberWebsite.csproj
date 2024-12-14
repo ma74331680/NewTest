@@ -203,6 +203,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\News\News.cshtml" />
     <Content Include="Views\Gallery\Gallery.cshtml" />
+    <Content Include="Views\Gallery\GalleryShow.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
