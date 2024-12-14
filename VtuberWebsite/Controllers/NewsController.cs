@@ -8,9 +8,9 @@ namespace VtuberWebsite.Controllers
 {
     public class NewsController : Controller
     {
-        public ActionResult Index()
+        public ActionResult News()
         {
-            return View("~/Views/Home/Index.cshtml");
+            return View();
         }
     }
 }

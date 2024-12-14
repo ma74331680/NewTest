@@ -1,0 +1,119 @@
+﻿@{
+    ViewBag.Title = "作品列表";
+}
+<head>
+    <link rel="stylesheet" href="css/作品列表.css">
+</head>
+
+<body>
+    <header>
+        <h1>作品列表</h1>
+        <a href="最新消息.html" class="news-too">最新消息</a>
+        <nav class="gMenu">
+            <div class="header-right dropdown">
+                <a class="bi bi-person-circle dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 32px; color: #38ef06; text-decoration: none;" aria-label="使用者選單"></a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="個人檔案.html">個人檔案</a></li>
+                    <li><a class="dropdown-item" href="登入頁面.html">登出</a></li>
+                </ul>
+            </div>
+            <input class="menu-btn" type="checkbox" id="menu-btn">
+            <label class="menu-icon" for="menu-btn">
+                <span class="navicon"></span>
+            </label>
+            <ul class="menu">
+                <li><a class="menu-item" href="index.html">Home</a></li>
+                <li><a class="menu-item" href="作品列表頁面.html">作品列表</a></li>
+                <li><a class="menu-item" href="我的最愛.html">我的最愛</a></li>
+                <li><a class="menu-item" href="關於我們.html">關於我們</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="search-bar">
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="搜尋作品" aria-label="搜尋作品">
+            <button class="btn btn-outline-success" type="submit">搜尋</button>
+        </form>
+    </div>
+
+    <!-- 作品展示區 -->
+    <div class="container mt-4">
+        <div class="row">
+            <!-- 單個作品卡片 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <!-- 作品縮圖 -->
+                    <img src="images/work-thumbnail.jpg" class="card-img-top" alt="作品縮圖">
+                    <div class="card-body text-center">
+                        <!-- 作者頭像 -->
+                        <img src="images/author-avatar.jpg" class="rounded-circle mb-3" alt="作者頭像" style="width: 60px; height: 60px;">
+                        <!-- 作品名稱 -->
+                        <h5 class="card-title">作品名稱</h5>
+                        <!-- 創作日期 -->
+                        <p class="card-text text-muted">創作日期：2024-12-01</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="images/work-thumbnail.jpg" class="card-img-top" alt="作品縮圖">
+                    <div class="card-body text-center">
+                        <img src="images/author-avatar.jpg" class="rounded-circle mb-3" alt="作者頭像" style="width: 60px; height: 60px;">
+                        <h5 class="card-title">作品名稱</h5>
+                        <p class="card-text text-muted">創作日期：2024-12-01</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="images/work-thumbnail.jpg" class="card-img-top" alt="作品縮圖">
+                    <div class="card-body text-center">
+                        <img src="images/author-avatar.jpg" class="rounded-circle mb-3" alt="作者頭像" style="width: 60px; height: 60px;">
+                        <h5 class="card-title">作品名稱</h5>
+                        <p class="card-text text-muted">創作日期：2024-12-01</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-4">
+        <div class="row">
+            <!-- 單個作品卡片 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <!-- 作品縮圖 -->
+                    <img src="images/work-thumbnail.jpg" class="card-img-top" alt="作品縮圖">
+                    <div class="card-body text-center">
+                        <!-- 作者頭像 -->
+                        <img src="images/author-avatar.jpg" class="rounded-circle mb-3" alt="作者頭像" style="width: 60px; height: 60px;">
+                        <!-- 作品名稱 -->
+                        <h5 class="card-title">作品名稱</h5>
+                        <!-- 創作日期 -->
+                        <p class="card-text text-muted">創作日期：2024-12-01</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="images/work-thumbnail.jpg" class="card-img-top" alt="作品縮圖">
+                    <div class="card-body text-center">
+                        <img src="images/author-avatar.jpg" class="rounded-circle mb-3" alt="作者頭像" style="width: 60px; height: 60px;">
+                        <h5 class="card-title">作品名稱</h5>
+                        <p class="card-text text-muted">創作日期：2024-12-01</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="images/work-thumbnail.jpg" class="card-img-top" alt="作品縮圖">
+                    <div class="card-body text-center">
+                        <img src="images/author-avatar.jpg" class="rounded-circle mb-3" alt="作者頭像" style="width: 60px; height: 60px;">
+                        <h5 class="card-title">作品名稱</h5>
+                        <p class="card-text text-muted">創作日期：2024-12-01</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
