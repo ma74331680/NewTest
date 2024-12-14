@@ -1,0 +1,79 @@
+﻿@{
+    ViewBag.Title = "最新消息";
+}
+<head>
+<link rel="stylesheet" href="css/最新消息.css">
+</head>
+<body>
+    <header>
+        <h1>最新消息</h1>
+    </header>
+    <main>
+        <div class="news-item">
+            <h2 class="news-title">我們的全新繪師上線！</h2>
+            <p class="news-date">2024年11月15日</p>
+            <p class="news-description">今日宣布與著名繪師xxx展開合作，共同推出一系列獨特的藝術作品。這次合作將融合xxx的精湛技藝和聖樹工坊的創新理念，旨在為粉絲和藝術愛好者帶來全新的視覺體驗。</p>
+            <div class="hidden-news-description" id="more-news-1">
+                <p>此次合作的作品將涵蓋xxx，包括周邊商品設計、動畫概念圖等，每一件作品都將展示xxx獨特的藝術風格，並融入聖樹工坊的品牌特色。</p>
+            </div>
+            <a class="read-more-btn" id="readMoreBtn1" onclick="toggleDescription('more-news-1', 'readMoreBtn1')">閱讀更多</a>
+        </div>
+        <div class="news-item">
+            <h2 class="news-title">我們的全新網站上線！</h2>
+            <p class="news-date">2024年11月15日</p>
+            <p class="news-description">我們全新設計的網站正式上線，帶來更快速、直觀的用戶體驗，歡迎瀏覽！</p>
+            <div class="hidden-news-description" id="more-news-2">
+                <p>此次網站改版不僅展現了公司的品牌升級，更提供了用戶友好的瀏覽體驗和豐富的功能，為客戶、合作夥伴及社群用戶帶來全新的數位體驗。</p>
+            </div>
+            <a class="read-more-btn" id="readMoreBtn2" onclick="toggleDescription('more-news-2', 'readMoreBtn2')">閱讀更多</a>
+        </div>
+        <div class="news-item">
+            <h2 class="news-title">發布會圓滿落幕</h2>
+            <p class="news-date">2024年10月30日</p>
+            <p class="news-description">我們在年度發布會上展示了最新技術與產品，獨領風騷的創新設計，吸引了業界的廣泛關注。</p>
+            <div class="hidden-news-description" id="more-news-3">
+                <p>這一天，見證了我們團隊的努力，並鞏固了我們在行業內的領先地位。</p>
+            </div>
+            <a class="read-more-btn" id="readMoreBtn3" onclick="toggleDescription('more-news-3', 'readMoreBtn3')">閱讀更多</a>
+        </div>
+    </main>
+
+    <script>
+        function toggleDescription(contentId, buttonId) {
+            const content = document.getElementById(contentId);
+            const button = document.getElementById(buttonId);
+
+            if (content.style.display === 'none' || content.style.display === '') {
+                content.style.display = 'block';
+                button.textContent = '閱讀更少';
+            } else {
+                content.style.display = 'none';
+                button.textContent = '閱讀更多';
+            }
+        }
+    </script>
+    <nav class="gMenu">
+        <!-- 包裹人像圖示和下拉選單的容器，並設置類名以便定位 -->
+        <div class="header-right dropdown">
+            <a class="bi bi-person-circle dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 32px; color: #38ef06; text-decoration: none;"></a>
+            <!-- 下拉選單內容 -->
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="個人檔案.html">個人檔案</a></li>
+                <li><a class="dropdown-item" href="登入頁面.html">登出</a></li>
+            </ul>
+        </div>
+
+        <!-- Existing menu button and navigation links -->
+        <input class="menu-btn" type="checkbox" id="menu-btn">
+        <label class="menu-icon" for="menu-btn">
+            <span class="navicon"></span>
+        </label>
+        <ul class="menu">
+            <li><a class="menu-item" href="index.html">Home</a></li>
+            <li><a class="menu-item" href="作品列表頁面.html">作品列表</a></li>
+            <li><a class="menu-item" href="我的最愛.html">我的最愛</a></li>
+            <li><a class="menu-item" href="關於我們.html">關於我們</a></li>
+
+        </ul>
+    </nav>
+</body>

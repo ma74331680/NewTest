@@ -8,9 +8,9 @@ namespace VtuberWebsite.Controllers
 {
     public class GalleryController : Controller
     {
-        public ActionResult Index()
+        public ActionResult Gallery()
         {
-            return View("~/Views/Home/Index.cshtml");
+            return View();
         }
     }
 }
