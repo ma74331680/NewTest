@@ -417,23 +417,19 @@ body {
 
 /* 自定義樣式，讓文字固定在左上角 */
 .news-too {
-    position: absolute;
-    top: 10px;
-    left: 5px;
     background-color: #ffcc00;
-    /* 背景顏色 */
-    color: #000;
-    /* 文字顏色 */
-    padding: 5px 10px;
-    border-radius: 5px;
     font-weight: bold;
+    border-radius: 20px;
+    padding: 50px 200px;
+    font-size: 42px;
+    color: black;
 }
 
 
 
 /* 自定義樣式 */
 header {
-  position: relative;
+    text-align: center;
 }
 
 .header-right {

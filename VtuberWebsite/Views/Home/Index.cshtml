@@ -6,7 +6,46 @@
 <head>
     <link rel="stylesheet" href="~/Content/style.css">
 </head>
+
+<header>
+    <a href="@Url.Action("News", "News")" class="news-too">最新消息</a>
+</header>
+
 <body class="subPage">
+    <div class="container-fluid">
+
+        <a href="http://getboostrap.com" class="navbar-brand">
+            <img id="logo" src="~/Image/christmas-tree.png" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu">
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+    </div>
+    
+    <nav class="gMenu">
+        <!-- 包裹人像圖示和下拉選單的容器，並設置類名以便定位 -->
+        <div class="header-right dropdown">
+            <a class="bi bi-person-circle dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 32px; color: #09ef55; text-decoration: none;"></a>
+            <!-- 下拉選單內容 -->
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="註冊頁面.html">註冊帳號</a></li>
+                <li><a class="dropdown-item" href="登入頁面.html">登入帳號</a></li>
+            </ul>
+        </div>
+        <!-- Existing menu button and navigation links -->
+        <input class="menu-btn" type="checkbox" id="menu-btn">
+        <label class="menu-icon" for="menu-btn">
+            <span class="navicon"></span>
+        </label>
+        <ul class="menu">
+            <li><a class="menu-item" href="index.html">Home</a></li>
+            <li><a class="menu-item" href="作品列表頁面.html">作品列表</a></li>
+            <li><a class="menu-item" href="我的最愛.html">我的最愛</a></li>
+            <li><a class="menu-item" href="關於我們.html">關於我們</a></li>
+        </ul>
+
+    </nav>
 
     <h1 class="title">
         <span>聖樹工坊</span>
