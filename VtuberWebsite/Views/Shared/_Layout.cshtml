@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿@{ 
+    var userIsLoggedIn = User.Identity.IsAuthenticated;
+}
+
+<!DOCTYPE html>
 <html>
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -13,23 +17,45 @@
     <link href="~/Content/layout.css" rel="stylesheet" />
 </head>
 
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const userAvatar = document.getElementById('userAvatar');
+        const dropdownMenu = document.getElementById('dropdownMenu');
+
+        // 點擊頭像顯示/隱藏下拉菜單
+        userAvatar.addEventListener('click', function () {
+            dropdownMenu.style.display = (dropdownMenu.style.display === 'block') ? 'none' : 'block';
+        });
+
+        // 點擊其他地方隱藏菜單
+        window.addEventListener('click', function (event) {
+            if (!event.target.closest('.user-avater')) {
+                dropdownMenu.style.display = 'none';
+            }
+        });
+    });
+</script>
+
 <header>
     <h1>@ViewBag.Title</h1>
-</header>
 
-<a class="news-too" href="@Url.Action("News", "News")">最新消息</a>
-
-<body>
-    <nav class="gMenu">
-        <!-- 包裹人像圖示和下拉選單的容器，並設置類名以便定位 -->
-        <div class="header-right dropdown">
-            <a class="bi bi-person-circle dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 32px; color: #09ef55; text-decoration: none;"></a>
-            <!-- 下拉選單內容 -->
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <li><a class="dropdown-item" href="註冊頁面.html">註冊帳號</a></li>
-                <li><a class="dropdown-item" href="登入頁面.html">登入帳號</a></li>
-            </ul>
+    <div class="user-avater header-right">
+        <img src="~/Image/user.jpg" alt="User Avater" class="user-icon" data-bs-toggle="dropdown" aria-haspopup="false" style="cursor: pointer;" />
+        <div class="dropdown-menu">
+            @if (userIsLoggedIn)
+            {
+                <a class="dropdown-item" href="@Url.Action("Logout", "User")">登出</a>
+            }
+            else
+            {
+                <a class="dropdown-item" href="@Url.Action("Login", "User")">登入</a>
+                <a class="dropdown-item" href="@Url.Action("SignUp", "User")">註冊</a>
+                <a class="dropdown-item" href="@Url.Action("Profile", "User")">個人檔案</a>
+            }
         </div>
+    </div>
+
+    <nav class="gMenu">
         <!-- Existing menu button and navigation links -->
         <input class="menu-btn" type="checkbox" id="menu-btn">
         <label class="menu-icon" for="menu-btn">
@@ -42,8 +68,13 @@
             <li><a class="menu-item" href="@Url.Action("About", "Home")">關於我們</a></li>
         </ul>
     </nav>
+</header>
 
 
+
+<a class="news-too" href="@Url.Action("News", "News")">最新消息</a>
+
+<body>
     <div class="container body-content">
         @RenderBody()
     </div>
