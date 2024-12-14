@@ -122,12 +122,6 @@ img {
   height: 240px;
   margin-bottom: 8px;
 }
-.item01 {
-  grid-row-start: 1;
-  grid-row-end: 2;
-  grid-column-start: 1;
-  grid-column-end: 3;
-}
 .item02 {
   grid-row: 2 / 4;
   grid-column: 1 / 2;
