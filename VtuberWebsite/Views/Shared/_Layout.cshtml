@@ -33,10 +33,10 @@
             <span class="navicon"></span>
         </label>
         <ul class="menu">
-            <li><a class="menu-item" href="index.html">Home</a></li>
-            <li><a class="menu-item" href="作品列表頁面.html">作品列表</a></li>
-            <li><a class="menu-item" href="我的最愛.html">我的最愛</a></li>
-            <li><a class="menu-item" href="關於我們.html">關於我們</a></li>
+            <li><a class="menu-item" href="@Url.Action("Index", "Home")">Home</a></li>
+            <li><a class="menu-item" href="@Url.Action("Gallery", "Gallery")">作品列表</a></li>
+            <li><a class="menu-item" href="@Url.Action("Favorite", "User")">我的最愛</a></li>
+            <li><a class="menu-item" href="@Url.Action("About", "Home")">關於我們</a></li>
         </ul>
     </nav>
 
