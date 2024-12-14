@@ -10,11 +10,11 @@
     <link href="~/Content/layout.css" rel="stylesheet" />
 </head>
 
-<a href="最新消息.html" class="news-too">最新消息</a>
-
 <header>
     <h1>@ViewBag.Title</h1>
 </header>
+
+<a class="news-too" href="@Url.Action("News", "News")">最新消息</a>
 
 <body>
     <nav class="gMenu">
@@ -39,6 +39,7 @@
             <li><a class="menu-item" href="@Url.Action("About", "Home")">關於我們</a></li>
         </ul>
     </nav>
+
 
     <div class="container body-content">
         @RenderBody()
