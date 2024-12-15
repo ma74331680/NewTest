@@ -35,6 +35,15 @@ namespace VtuberWebsite.Controllers
             return View();
         }
 
+        //註冊提交
+        [HttpPost]
+        public ActionResult CheckAccount(string account)
+        {
+            var users = new string[] { "test", "admin " };
+            var isExist = users.Contains(account);
+            return Json(new { exist = isExist });
+        }
+
         // 登入提交
         [HttpPost]
         public ActionResult Login(string username, string password)

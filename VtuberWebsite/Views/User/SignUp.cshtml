@@ -51,3 +51,28 @@
         }
     </script>
 </body>
+
+@section scripts{
+    <script type="text/javascript">
+        $("#account").on("keyup", function () {
+            userAccount = $(this).val();
+            //consale.log(userAccount);
+
+            $.post("/User/CheckAccount",
+                { account: userAccount },
+                function (data, status, request) {
+                    console.log(data);
+                    //console.log(request)
+
+                    if (request.status == 200 && data.exist == true) {
+                        $("#message").html("此帳號無法使用，請更換名稱")
+                        $("#button").attr("disabled", true);
+                    } else {
+                        $("#message").html("")
+                        $("button").attr("disable", false);
+                    }
+                });
+        });
+    </script>
+
+}
