@@ -12,7 +12,7 @@
 <body>
     <div class="register-form mx-auto mt-5" style="max-width: 400px;">
         <h2 class="text-center mb-4">註冊帳號</h2>
-        <form id="registerForm" onsubmit="return handleRegister()">
+        <form id="registerForm" method="post" action="/User/Login" onsubmit="return handleRegister()">
             <div class="mb-3">
                 <label for="username" class="form-label">帳號</label>
                 <input type="text" class="form-control" id="username" placeholder="輸入帳號" required>
@@ -53,6 +53,7 @@
 </body>
 
 @section scripts{
+
     <script type="text/javascript">
         $("#account").on("keyup", function () {
             userAccount = $(this).val();
@@ -73,6 +74,18 @@
                     }
                 });
         });
+        function handleRegister() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+
+            if (password !== confirmPassword) {
+                alert('密碼和確認密碼不一致，請重新輸入！');
+                return false;
+            }
+            return true; // 允許表單提交
+        }
+
     </script>
 
 }
