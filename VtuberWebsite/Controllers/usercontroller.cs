@@ -14,11 +14,6 @@ namespace VtuberWebsite.Controllers
         // 模擬用戶資料庫（可改為實際資料庫）
         private static Dictionary<string, string> users = new Dictionary<string, string>();
 
-        public ActionResult Index()
-        {
-            return View("~/Views/Home/Index.cshtml");
-        }
-
         public ActionResult Profile()
         {
             return View();
@@ -68,7 +63,7 @@ namespace VtuberWebsite.Controllers
             users.Add(username, hashedPassword);
 
             ViewBag.SuccessMessage = "註冊成功，請登入。";
-            return RedirectToAction("Login");
+            return RedirectToAction("Login", "User");
         }
 
         // 登入提交
